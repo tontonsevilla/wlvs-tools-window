@@ -80,7 +80,7 @@
             // 
             splitContainer1.Panel2.Controls.Add(tabControl1);
             splitContainer1.Size = new Size(960, 502);
-            splitContainer1.SplitterDistance = 320;
+            splitContainer1.SplitterDistance = 163;
             splitContainer1.TabIndex = 2;
             // 
             // toolStrip1
@@ -93,7 +93,7 @@
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.RenderMode = ToolStripRenderMode.Professional;
-            toolStrip1.Size = new Size(320, 502);
+            toolStrip1.Size = new Size(163, 502);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -104,7 +104,7 @@
             toolStripButton1.ImageAlign = ContentAlignment.MiddleLeft;
             toolStripButton1.ImageTransparentColor = Color.Magenta;
             toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(318, 24);
+            toolStripButton1.Size = new Size(161, 24);
             toolStripButton1.Text = "Common Tools";
             // 
             // tsmiGenerateFakePersonalInfo
@@ -121,7 +121,7 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(636, 502);
+            tabControl1.Size = new Size(793, 502);
             tabControl1.TabIndex = 0;
             // 
             // frmMainParent

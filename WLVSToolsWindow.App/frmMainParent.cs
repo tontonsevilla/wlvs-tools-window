@@ -44,7 +44,7 @@ namespace WLVSToolsWindow.App
         {
             var toolStripMenuItem = (ToolStripMenuItem)sender;
             var itemText = toolStripMenuItem.Text + "    ";
-            var form = Helper.TryGetFormByName(toolStripMenuItem.Name);
+            var form = Helper.TryGetFormByName(toolStripMenuItem.Name.Replace("tsmi", "frm"));
             var tabPage = new TabPage(itemText);
             var sameTabExists = (from TabPage tab in tabControl1.TabPages
                                  where tab.Text == itemText
@@ -53,6 +53,9 @@ namespace WLVSToolsWindow.App
             if (!sameTabExists)
             {
                 //tabPage
+                form.TopLevel = false;
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.Show();
                 tabPage.Controls.Add(form);
                 tabControl1.TabPages.Add(tabPage);
             }
